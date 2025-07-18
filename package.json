@@ -1,0 +1,21 @@
+{
+  "name": "threejs",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.27.6",
+    "three": "^0.178.0",
+    "three-nebula": "^10.0.3",
+    "troika-three-text": "^0.52.4"
+  },
+  "devDependencies": {
+    "vite": "^7.0.5"
+  },
+  "description": ""
+}
