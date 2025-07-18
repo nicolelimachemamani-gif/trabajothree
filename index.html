@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>pescera</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        #debugInfo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-family: monospace;
+            font-size: 12px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        
+        #ui-panel {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            color: white;
+            font-family: monospace;
+            border-radius: 5px;
+            z-index: 1000;
+            width: 230px;
+        }
+        
+        #ui-panel label {
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        #ui-panel input[type="range"] {
+            width: 100%;
+        }
+        
+        #integrantes {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            color: white;
+            font-family: monospace;
+            font-size: 12px;
+            border-radius: 5px;
+            z-index: 1000;
+            max-width: 250px;
+        }
+        
+        #integrantes h4 {
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+    </style>
+  <script type="module" crossorigin src="/trabajothree/assets/index-DuoB4s69.js"></script>
+</head>
+
+<body>
+    <!-- Panel de depuración -->
+    <div id="debugInfo"></div>
+
+    <!-- Panel de controles -->
+    <div id="ui-panel">
+        <label>Peces: <span id="numPecesValue">12</span></label>
+        <input type="range" id="numPeces" min="1" max="50" value="12"><br><br>
+
+        <label>Separación: <span id="separacionValue">8</span></label>
+        <input type="range" id="separacion" min="0" max="30" value="8"><br><br>
+
+        <label>Alineación: <span id="alineacionValue">15</span></label>
+        <input type="range" id="alineacion" min="0" max="50" value="15"><br><br>
+
+        <label>Cohesión: <span id="cohesionValue">20</span></label>
+        <input type="range" id="cohesion" min="0" max="50" value="20"><br>
+    </div>
+
+    <!-- Panel de integrantes -->
+    <div id="integrantes">
+        <h4>Integrantes:</h4>
+        <ul>
+            <li>Limache Mamani Garen Nicole</li>
+            <li>Mamani Mamani Isaac Samuel</li>
+            <li>Mendoza Pari Kenyo</li>
+            <li>Quispe Quispe Shamely Angeles</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
